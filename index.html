@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>To Do</title>
+</head>
+<body>
+    <h1>TO DO LIST</h1>
+    <div id="app">
+        <input type="text" v-model="userTask">
+        <button @click="newTask">Envoyer</button>
+        <!-- <table v-for="task in taskes">
+            <tr>
+                <td>{{task.done}}</td>
+                <td>{{task.name}}</td>
+                <td>{{task.del}}</td>
+            </tr>
+        </table> -->
+        <li v-for="task in taskes">
+            <input type="checkbox">
+            {{task.text}}
+        </li>
+
+        <!-- <p v-for=>Byabya</p>
+        <p>X</p>
+        <input type="checkbox" v-model=""> -->
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
